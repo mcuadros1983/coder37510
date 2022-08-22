@@ -111,56 +111,71 @@
         <div class="row">
             <div class="col-7">
                 <p><b>Detalle de Facturación</b></p>
-                <form action="#" class="credit-card-div">
+                <form class="credit-card-div">
 
-                  <div class="form-group"> <!-- Full Name -->
-                    <label for="full_name_id" class="control-label">Nombre Completo</label>
-                    <input type="text" class="form-control" id="full_name_id" name="full_name" >
+                  <div > <!-- Full Name -->
+                    <label >Nombre Completo</label>
+                    <input type="text" class="form-control" id="full_name_id"  required>
+                </div>    
+
+                <div > <!-- DNI-->
+                  <label >DNI</label>
+                  <input type="number" class="form-control" id="dni_id" max="8" required>
+                  
+            
                 </div>    
             
-                <div class="form-group"> <!-- Street 1 -->
-                    <label for="street1_id" class="control-label">Dirección</label>
-                    <input type="text" class="form-control" id="street1_id" name="street1" >
-                </div>                    
+                <div > <!-- Street 1 -->
+                    <label >Dirección</label>
+                    <input type="text" class="form-control" id="street1_id" required>
+                </div>   
+                
+                <div > <!-- Telefono -->
+                  <label >Telefono</label>
+                  <input type="number" class="form-control" id="phone_id" required>
+                </div> 
+
+                <div > <!-- Telefono -->
+                    <label >Email</label>
+                    <input type="email" class="form-control" id="email_id" required>
+                </div>
                                         
-                <div class="form-group"> <!-- City-->
-                    <label for="city_id" class="control-label">Ciudad</label>
-                    <input type="text" class="form-control" id="city_id" name="city" >
+                <div > <!-- City-->
+                    <label >Ciudad</label>
+                    <input type="text" class="form-control" id="city_id" required>
                 </div>                                    
                                         
-                <div class="form-group"> <!-- State Button -->
-                    <label for="state_id" class="control-label">Provincia</label>
-                    <select class="form-control" id="state_id">
-                        <option value="">Buenos Aires</option>
-                        <option value="">CABA</option>
-                        <option value="">Catamarca</option>
-                        <option value="">Chaco</option>
-                        <option value="">Chubut</option>
-                        <option value="">Cordoba</option>
-                        <option value="">Corrientes</option>
-                        <option value="">Entre Rios</option>
-                        <option value="">Formosa</option>
-                        <option value="">Jujuy</option>
-                        <option value="">La Pampa</option>
-                        <option value="">La Rioja</option>
-                        <option value="">Mendoza</option>
-                        <option value="">Misiones</option>
-                        <option value="">Neuquen</option>
-                        <option value="">Rio Negro</option>
-                        <option value="">Salta</option>
-                        <option value="">San Juan</option>
-                        <option value="">San Luis</option>
-                        <option value="">Santa Cruz</option>
-                        <option value="">Santa Fe</option>
-                        <option value="">Santiago del Estero</option>
-                        <option value="">Tierra del Fuego</option>
-                        <option value="">Tucuman</option>                    </select>                    
-                </div>
+                <div > <!-- State Button -->
+                    <label >Provincia</label>
+                    <select class="form-control" id="state_id" >
+                        <option value="BA">Buenos Aires</option>
+                        <option value="CABA">CABA</option>
+                        <option value="CAT">Catamarca</option>
+                        <option value="CHA">Chaco</option>
+                        <option value="CHU">Chubut</option>
+                        <option value="COR">Cordoba</option>
+                        <option value="CORR">Corrientes</option>
+                        <option value="ENT">Entre Rios</option>
+                        <option value="FOR">Formosa</option>
+                        <option value="JUJ">Jujuy</option>
+                        <option value="LAP">La Pampa</option>
+                        <option value="LAR">La Rioja</option>
+                        <option value="MEN">Mendoza</option>
+                        <option value="MIS">Misiones</option>
+                        <option value="NEU">Neuquen</option>
+                        <option value="RIO">Rio Negro</option>
+                        <option value="SALT">Salta</option>
+                        <option value="SANJ">San Juan</option>
+                        <option value="SANL">San Luis</option>
+                        <option value="SANTC">Santa Cruz</option>
+                        <option value="SANTF">Santa Fe</option>
+                        <option value="SANTE">Santiago del Estero</option>
+                        <option value="TIE">Tierra del Fuego</option>
+                        <option value="TUC">Tucuman</option>                    
+                      </select>                    
+                </div><br>   
                 
-                <div class="form-group"> <!-- Zip Code-->
-                    <label for="zip_id" class="control-label">Codigo Postal</label>
-                    <input type="text" class="form-control" id="zip_id" name="zip" >
-                </div><br>       
+
                 
                 <!-- <div class="form-group"> 
                     <button type="submit" class="btn btn-primary">Comprar!</button>
@@ -168,50 +183,65 @@
                  -->
                  
                  <p><b>Datos de la forma de pago</b></p>
-                  <div class="panel panel-default" >
-                   <div class="panel-heading">
+                  <div >
+                   <div >
                        
                         <div class="row ">
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="Ingrese el numero de la tarjeta" />
+                                    <input type="number" class="form-control" placeholder="Ingrese el numero de la tarjeta" id="creditcardnumber_id" required>
                                 </div>
                             </div><br>
                        <div class="row ">
                                 <div class="col-md-3 col-sm-3 col-xs-3">
                                     <span class="help-block text-muted small-font" >Mes venc.</span>
-                                    <input type="text" class="form-control" placeholder="MM" />
+                                    <input type="number" class="form-control" placeholder="MM" id="expmonth_id" required/>
                                 </div><br>
                            <div class="col-md-3 col-sm-3 col-xs-3">
                                     <span class="help-block text-muted small-font" >  Año venc.</span>
-                                    <input type="text" class="form-control" placeholder="AA" />
+                                    <input type="number" class="form-control" placeholder="AA" id="expyear_id" required/>
                                 </div><br>
                           <div class="col-md-3 col-sm-3 col-xs-3">
                                     <span class="help-block text-muted small-font" >  CCV</span>
-                                    <input type="text" class="form-control" placeholder="CCV" />
+                                    <input type="number" class="form-control" placeholder="CCV" id="ccv_id" required/>
                                 </div><br>
                            <div class="col-md-3 col-sm-3 col-xs-3">
-                  <img src="images/credit.png" class="img-rounded" />
+                        <img src="images/credit.png" class="img-rounded" />
                            </div><br>
                             </div><br>
                        <div class="row ">
                                 <div class="col-md-12 pad-adjust">
                   
-                                    <input type="text" class="form-control" placeholder="Nombre que aparece en la tarjeta" />
+                                    <input type="text" class="form-control" placeholder="Nombre que aparece en la tarjeta" id="creditcardname_id" required>
                                 </div><br>
                             </div><br>
   
-                         <div class="row ">
+                         <!-- <div class="row ">
                               <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-                                   <input type="submit"  class="btn btn-danger" value="CANCELAR" />
+                                   <input type="button"  class="btn btn-danger" value="CANCELAR" />
                                 </div><br>
                                 <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-                                    <input type="submit"  class="btn btn-warning btn-block" value="PAGAR" />
+   
+                                    <button class="btn btn-warning btn-block" id="btn-confirm">PAGAR</button>
+                                    
                                 </div><br>
-                            </div><br>
+                          </div><br> -->
                        
-                                     </div><br>
-                                </div><br>
+                  </div><br>
+                  </div><br>
                   </form>
+
+                  <div class="row ">
+                    <!-- <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                         <input type="button"  class="btn btn-danger" value="CANCELAR" />
+                      </div><br> -->
+                      <div class="col-md-12 col-sm-12 col-xs-12 pad-adjust">
+          
+                          <button class="btn btn-warning btn-block" id="btn-confirm">PAGAR</button>
+                          
+                      </div><br>
+                  </div><br>
+                  
+       
 
               
             </div>     
@@ -289,6 +319,7 @@
     <script src="js/itempedido.js"></script>
     <script src="js/site.js"></script>
     <script src="js/carrito.js"></script>
+    <script src="js/datospago.js"></script>
     
     
 </body>

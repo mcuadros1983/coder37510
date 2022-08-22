@@ -1,0 +1,22 @@
+[
+    {"id":1,"nombreProd":"BOCADO","precio":850,"vendido":false},
+    {"id":2,"nombreProd":"AGUJA","precio":850,"vendido":false},
+    {"id":3,"nombreProd":"COLITA","precio":980,"vendido":false},
+    {"id":4,"nombreProd":"BOLA","precio":950,"vendido":false},
+    {"id":5,"nombreProd":"COSTELETA","precio":830,"vendido":false},
+    {"id":6,"nombreProd":"CUADRADA","precio":990,"vendido":false},
+    {"id":7,"nombreProd":"PALETA","precio":800,"vendido":false},
+    {"id":8,"nombreProd":"COSTILLA","precio":990,"vendido":false},
+    {"id":9,"nombreProd":"BOCADOCERDO","precio":730,"vendido":false},
+    {"id":10,"nombreProd":"CARRE","precio":700,"vendido":false},
+    {"id":11,"nombreProd":"COSTILLACERDO","precio":810,"vendido":false},
+    {"id":12,"nombreProd":"MATAMBRECERDO","precio":930,"vendido":false},
+    {"id":13,"nombreProd":"CRIOLLO","precio":570,"vendido":false},
+    {"id":14,"nombreProd":"PARRILLERO","precio":670,"vendido":false},
+    {"id":15,"nombreProd":"HAMBURGUESA","precio":500,"vendido":false},
+    {"id":16,"nombreProd":"MILANESA","precio":600,"vendido":false},
+    {"id":17,"nombreProd":"AMADECASA","precio":1100,"vendido":false},
+    {"id":18,"nombreProd":"ASADO","precio":1200,"vendido":false},
+    {"id":19,"nombreProd":"CERDO","precio":1300,"vendido":false},
+    {"id":20,"nombreProd":"PREMIUM","precio":1500,"vendido":false}
+]

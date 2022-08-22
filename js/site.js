@@ -1,5 +1,19 @@
 //Array vacio para Productos y Precios
-const productos = [];
+let productos = [];
+
+// let productos = fetch('data/productos.json').then(res => res.json())
+// productos.then(products => console.log(products))
+// console.log(productos)
+// let arrayDatos = []
+// const obtenerDatos = async () => {
+// 	arrayDatos = await fetch('data/productos.json').then(res => res.json())
+// 	console.log(arrayDatos) // un valor
+// 	// resto de código
+//   }
+
+// obtenerDatos();
+// console.log(arrayDatos);
+
 productos.push(new Producto("1","aguja","850"));
 productos.push(new Producto("2","bocado","850"));
 productos.push(new Producto("3","colita de cuadril","980"));
@@ -21,7 +35,7 @@ productos.push(new Producto("18","matambre de novillo ","1200"));
 productos.push(new Producto("19","entraña","1300"));
 productos.push(new Producto("20","cuadril","1500"));
 
-//-----------------------------------------------
+//-------------
 
 //Declaraciones de variables que se utiliarán
 let monto = 0;
@@ -83,7 +97,7 @@ function respuestaClick(){
 
 	//Encontrado el producto se hace un push de la clase itemPedido al array nuevoPedido
 	nuevoPedido.push(new itemPedido(prodSeleccionado.id,prodSeleccionado.nombreProd,prodSeleccionado.precio,total,++idItemArr,cantidadValor));
-	
+
 	//Se limpia el localStorage para evitar incongruencias en la informacion
 	localStorage.clear();
 
@@ -94,15 +108,16 @@ function respuestaClick(){
 
 	location.reload();
 
-
-
 	let alertMsg = document.getElementById("aviso");
 	//cambio el código HTML interno"
 	alertMsg.innerHTML = `<div class="alert alert-dark alert-dismissible divRespuesta fade show position-fixed" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button><i class="fa-solid fa-circle-check"></i><span> ${prodSeleccionado.nombreProd} se ha añadido a tu carrito</span></div>`
+	
+	
 
 	} else {
 		alert("Debe ingresar un valor superior a 0");
 	}
+
 } 
 
 	let cartDetalle = document.getElementById("shopCart");
